@@ -11,6 +11,7 @@ class BlocAppLib extends StatelessWidget {
     );
   }
 }
+
 class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -42,7 +43,7 @@ class MainPage extends StatelessWidget {
       body: Center(
           child: BlocBuilder<ColorBlocLib, Color>(
         builder: (context, color) => AnimatedContainer(
-          duration: Duration(milliseconds: 100),
+          duration: Duration(milliseconds: 500),
           width: 100,
           height: 100,
           color: color,
