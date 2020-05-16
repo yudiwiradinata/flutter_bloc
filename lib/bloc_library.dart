@@ -41,12 +41,12 @@ class MainPage extends StatelessWidget {
         title: Text("BLoc dengan flutter_bloc Demo"),
       ),
       body: Center(
-          child: BlocBuilder<ColorBlocLib, Color>(
-        builder: (context, color) => AnimatedContainer(
-          duration: Duration(milliseconds: 500),
-          width: 100,
-          height: 100,
-          color: color,
+          child: BlocBuilder<ColorBlocLib, Color>(                  
+            builder: (context, color) => AnimatedContainer(
+              duration: Duration(milliseconds: 500),
+              width: 100,
+              height: 100,
+              color: color,
         ),
       )),
     );
